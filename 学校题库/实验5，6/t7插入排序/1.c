@@ -45,3 +45,35 @@ void Prt(int *a,int n)     //打印现在的数组
         printf("%d%s",a[i],i==n-1?"\n":" ");
     }
 }
+/*
+#include <stdio.h>
+
+static inline void prt(int *a, int n)
+{
+    for (int i = 0; i < n; ++i)
+        printf("%d%c", a[i], i == n - 1 ? '\n' : ' ');
+}
+
+int main(void)
+{
+    int n;
+    if (scanf("%d", &n) != 1) return 0;
+    int a[n];
+    for (int i = 0; i < n; ++i) scanf("%d", &a[i]);
+    //
+    for (int i = 1; i < n; ++i)
+    {
+        int tmp = a[i];          // 待插入元素
+        int j = i - 1;
+        while (j >= 0 && a[j] > tmp)   // 边比较边后移
+        {
+            a[j + 1] = a[j];
+            --j;
+        }
+        a[j + 1] = tmp;          // 插入到位
+
+        prt(a, n);               // 题目要求每趟打印
+    }
+    return 0;
+}
+*/

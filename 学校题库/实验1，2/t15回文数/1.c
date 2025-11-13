@@ -23,6 +23,19 @@ int main()
 }
 int hw(long long ip)
 {
+    long long saveyixia=ip;
+    long long hui=0;
+    while (ip>0)
+    {
+        hui=hui*10+ip%10;
+        ip/=10;
+    }
+    if(hui==saveyixia)return 1;
+    else return 0;
+}
+/* 原hw函数，创建了一个长度19的数组，使用两次循环，时间复杂度O(2n) 再卷一下常数！
+int hw(long long ip)
+{
     int a[19];   //int64最大19位数
     int i,step=0;
     long long oip=ip;
@@ -42,6 +55,7 @@ int hw(long long ip)
     if(oip==op)return 1;
     else return 0;
 }
+//与原hw函数配套的计算10^a的函数，也弃用    
 long long pown(int a)
 {
     long long result=1;
@@ -52,4 +66,4 @@ long long pown(int a)
     }
     return result;
 }
-
+*/

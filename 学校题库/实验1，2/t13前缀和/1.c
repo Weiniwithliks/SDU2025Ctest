@@ -1,21 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);
-    int a[n];
-    int i;
-    for(i=0;i<n;i++)
-    {
-        scanf("%d",&a[i]);
-    }
+    int N;
     long long sum=0;
-    int k;
-    for(k=0;k<n;k++)
+    scanf("%d",&N);
+    int i;
+    for(i=1;i<=N;i++)
     {
-        sum=sum+a[k];
-        printf("%lld",sum);
-        if(k!=n-1)printf(" ");
+        long long temp;
+        scanf("%lld",&temp);
+        sum=sum+temp;
+        printf("%lld%s",sum,i!=N?" ":"");
     }
     return 0;
 }

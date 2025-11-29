@@ -1,6 +1,21 @@
 #include<stdio.h>
 int main()
 {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int c;
+    while (a%b!=0)
+    {
+        c=a%b;
+        a=b;
+        b=c;
+    }
+    printf("%d",c);
+    return 0;
+}
+/* #include<stdio.h>
+int main()
+{
 	int a,b,c,d;
 	scanf("%d%d",&a,&b);
 	if(a*b==0)
@@ -35,4 +50,4 @@ int main()
 	}
 	printf("%d",c);
 	return 0;	
-}
+} */

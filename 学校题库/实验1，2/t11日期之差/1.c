@@ -1,4 +1,31 @@
 #include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+int isry(int y);
+int day(int y,int month,int day);
+int main()
+{
+    int year,month1,day1,month2,day2;
+    scanf("%d%d%d%d%d",&year,&month1,&day1,&month2,&day2);
+    int result=abs(day(year,month1,day1)-day(year,month2,day2));
+    printf("%d",result);
+    return 0;
+}
+int isry(int y)
+{
+    if(y%400==0)return 1;
+    else if(y%100!=0&&y%4==0)return 1;
+    return 0;
+}
+int day(int y,int month,int day)
+{
+    int dat_of_month[]={31,28+isry(y),31,30,31,30,31,31,30,31,30,31};
+    int i;
+    int sum=day;
+    for(i=0;i<month-1;i++)sum+=dat_of_month[i];
+    return sum;
+}
+/* #include<stdio.h>
 int rnpd(int Y)
 {
   int op;
@@ -89,4 +116,4 @@ int main()
   sum=sum+ld-ed;
   printf("%d",sum);
   return 0;
-}
+} */

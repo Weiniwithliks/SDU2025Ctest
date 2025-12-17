@@ -74,7 +74,7 @@ int main(void)
         return 0;
     }
     long long g=gcd_ll(aa, bb);
-    // ÏÈ³ıºó³Ë£¬Ê¹ÓÃ128Î»±£´æ½á¹ûÒÔ±ÜÃâ64Î»Òç³ö
+    // å…ˆé™¤åä¹˜ï¼Œä½¿ç”¨128ä½ä¿å­˜ç»“æœä»¥é¿å…64ä½æº¢å‡º
     unsigned __int128 l=(unsigned __int128)(aa/g)*(unsigned __int128)bb;
     print_u128(l);
     putchar('\n');

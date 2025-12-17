@@ -1,20 +1,20 @@
 long long mod_pow(long long b, long long n, long long m)
 {
-    // ¸ù¾ÝÄ£ÃÝÔËËãÐÔÖÊ£ºb? mod m = ((b mod m)?) mod m
+    // æ ¹æ®æ¨¡å¹‚è¿ç®—æ€§è´¨ï¼šb? mod m = ((b mod m)?) mod m
     long long result=1;
     b=b%m;
-    if(n==0)  //¼ÓÈëÁËn=0Ê±µÄÅÐ¶Ï£¬´¦ÀíÒ»Ð©±ß½çÎÊÌâ
+    if(n==0)  //åŠ å…¥äº†n=0æ—¶çš„åˆ¤æ–­ï¼Œå¤„ç†ä¸€äº›è¾¹ç•Œé—®é¢˜
     {
         return 1%m;
     }
     while (n>0)
     {
-        if(n&1)  //n&1=1´ú±ínÊÇÆæÊý
+        if(n&1)  //n&1=1ä»£è¡¨næ˜¯å¥‡æ•°
         {
             result=(result*b)%m;
         }
         b=(b*b)%m;
-        n>>=1;  //µÈ¼ÛÓÚn/2µ«ÊÇ¸ü¿ì
+        n>>=1;  //ç­‰ä»·äºŽn/2ä½†æ˜¯æ›´å¿«
     }
     return result;
 }
@@ -28,7 +28,7 @@ long long llpow(long long x,long long y)
     }
     return op;
 }
-long long mod_pow(long long b, long long n, long long m) //Êä³öb^n%mµÄÕûÊý½á¹û
+long long mod_pow(long long b, long long n, long long m) //è¾“å‡ºb^n%mçš„æ•´æ•°ç»“æžœ
 {
     long long result,temp;
     if((n&1)==0)

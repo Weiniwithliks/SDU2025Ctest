@@ -1,5 +1,5 @@
 /*
-* ½«n°´Ê®½øÖÆÖðÎ»Äæ×ª£¬·µ»Ø½á¹û¡£
+* å°†næŒ‰åè¿›åˆ¶é€ä½é€†è½¬ï¼Œè¿”å›žç»“æžœã€‚
 */
 unsigned long long pown(int a)
 {

@@ -1,5 +1,5 @@
 /**
- * ²Î¿¼º¯ÊýÔ­ÐÍ£¬²¹È«²¢ÊµÏÖÒÔÏÂ6¸ö½»»»º¯Êý¡£
+ * å‚è€ƒå‡½æ•°åŽŸåž‹ï¼Œè¡¥å…¨å¹¶å®žçŽ°ä»¥ä¸‹6ä¸ªäº¤æ¢å‡½æ•°ã€‚
  */
 void swap_char(char* a, char* b);
 void swap_short( short * a, short * b);

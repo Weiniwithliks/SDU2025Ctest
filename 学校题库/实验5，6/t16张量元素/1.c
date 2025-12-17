@@ -2,13 +2,13 @@
 typedef long long ll;
 int main()
 {
-    ll N,S,T;                                  //N是张量维数
+    ll N,S,T;                                  
     scanf("%lld%lld%lld",&N,&S,&T);
     ll d[N];
     int i=0;
-    while (i<N)scanf("%lld",&d[i++]);             //读取各维度大小
+    while (i<N)scanf("%lld",&d[i++]);            
     int k=0;
-    i=0;                                        //把i重置一下
+    i=0;                                      
     ll sample[N];
     ll stride[N];
     stride[N-1]=1;
@@ -19,8 +19,8 @@ int main()
     k=0;
     while (k<T)
     {
-        while (i<N)scanf("%lld",&sample[i++]);    //读取测试用例
-        i=0;                                    //把i重置一下
+        while (i<N)scanf("%lld",&sample[i++]);    
+        i=0;                                    
         ll sum=0;
         ll j;
         for(j=0;j<N;j++)

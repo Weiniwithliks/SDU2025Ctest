@@ -1,5 +1,5 @@
 /**
- * ÇåÀí´®sÊ×Î²Á½¶ËµÄ¿Õ¸ñ×Ö·û£¬½á¹û´®±£´æµ½sÖ¸ÏòµØÖ·¡£
+ * æ¸…ç†ä¸²sé¦–å°¾ä¸¤ç«¯çš„ç©ºæ ¼å­—ç¬¦ï¼Œç»“æžœä¸²ä¿å­˜åˆ°sæŒ‡å‘åœ°å€ã€‚
  */
 #include <string.h>
 void trim(char * const s)
@@ -8,7 +8,7 @@ void trim(char * const s)
     int i;
     for(start=0;*(s+start)==' ';start++);
     for(end=end;*(s+end)==' '&&end>=0;end--);
-    //ÒÔÉÏÎÒÃÇÕÒµ½ÁËstartºÍend
+    //ä»¥ä¸Šæˆ‘ä»¬æ‰¾åˆ°äº†startå’Œend
     int j;
     for(j=0;j<=end-start;j++)
     {

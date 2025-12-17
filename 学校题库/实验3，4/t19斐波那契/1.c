@@ -1,5 +1,5 @@
 /*
-* ¼ÆËãµÚnÏîì³²¨ÄÇÆõÊıF(n)¡£
+* è®¡ç®—ç¬¬né¡¹æ–æ³¢é‚£å¥‘æ•°F(n)ã€‚
 */
 unsigned long long fibonacci(int n)
 {

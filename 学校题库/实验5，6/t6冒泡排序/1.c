@@ -1,5 +1,5 @@
 /*
-* Ê¹ÓÃÌâÃæÃèÊöµÄ¡°Ã°ÅİÅÅĞò¡±Ëã·¨£¬½«³¤¶ÈÎªnµÄÊı×éaÖØÅÅÎªÉıĞò¡£
+* ä½¿ç”¨é¢˜é¢æè¿°çš„â€œå†’æ³¡æ’åºâ€ç®—æ³•ï¼Œå°†é•¿åº¦ä¸ºnçš„æ•°ç»„aé‡æ’ä¸ºå‡åºã€‚
 */
 void swap_elements(int a[], int i, int j)
 {
@@ -7,7 +7,7 @@ void swap_elements(int a[], int i, int j)
     a[i]=a[j];
     a[j]=temp;
 }
-void Prt(int *a,int n)     //´òÓ¡ÏÖÔÚµÄÊı×é
+void Prt(int *a,int n)     //æ‰“å°ç°åœ¨çš„æ•°ç»„
 {
     int i;
     for(i=0;i<n;i++)

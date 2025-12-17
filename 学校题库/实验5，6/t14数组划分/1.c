@@ -4,11 +4,11 @@ int partition(int a[], int b, int e)
     int i=b,j=e-1;    
     while (i<j)
     {
-        while(i<j&&a[j]>=pivot)j--;    //ÓÒ²àÕÒĞ¡µÄ
-        if(i<j)a[i++]=a[j];            //Ìî¿Ó£¬iÇ°½ø
-        while (i<j&&a[i]<=pivot)i++;   //×ó²àÕÒ´óµÄ
-        if(i<j)a[j--]=a[i];            //Ìî¿Ó£¬jºóÍË
+        while(i<j&&a[j]>=pivot)j--;    //å³ä¾§æ‰¾å°çš„
+        if(i<j)a[i++]=a[j];            //å¡«å‘ï¼Œiå‰è¿›
+        while (i<j&&a[i]<=pivot)i++;   //å·¦ä¾§æ‰¾å¤§çš„
+        if(i<j)a[j--]=a[i];            //å¡«å‘ï¼Œjåé€€
     }
-    a[i]=pivot;                        //×îºóµÄ¿Ó·ÅÊàÖá
+    a[i]=pivot;                        //æœ€åçš„å‘æ”¾æ¢è½´
     return i;
 }

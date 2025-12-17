@@ -9,7 +9,7 @@ int min(int x,int y)
     if(x<y)return x;
     else return y;
 }
-/*                                              //Ô­gpº¯Êı£¬±©Á¦Ã¶¾ÙÊ±¼ä¸´ÔÓ¶ÈO(n^2)³¬Ê±À²
+/*                                              //åŸgpå‡½æ•°ï¼Œæš´åŠ›æšä¸¾æ—¶é—´å¤æ‚åº¦O(n^2)è¶…æ—¶å•¦
 int gp(int a,int b[])
 {
     int i,j,wel=b[1]-b[0];

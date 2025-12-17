@@ -3,11 +3,11 @@ void reverse_array(int a[], int b, int e)
 {
     void th(int a[],int i1,int i2);
     int k;
-    for(k=0;k<(e-b)/2;k++)  //Ô­±¾Ğ´µÄk<=(e-b)/2,µ¼ÖÂÑ­»·¶àÁËÒ»´Î
+    for(k=0;k<(e-b)/2;k++)  //åŸæœ¬å†™çš„k<=(e-b)/2,å¯¼è‡´å¾ªç¯å¤šäº†ä¸€æ¬¡
     {
         th(a,b+k,e-1-k);
     }
-    /* µ÷ÊÔÓÃ
+    /* è°ƒè¯•ç”¨
     int i;
     for(i=b;i<e;i++)printf("%d%s",a[i],i==e-1?"\n":" ");
     */
@@ -19,7 +19,7 @@ void th(int a[],int i1,int i2)
     a[i1]=a[i2];
     a[i2]=tp;
 }
-/*  //µ÷ÊÔÓÃ
+/*  //è°ƒè¯•ç”¨
 int main()
 {
     int a[]={0,0,20,50,20,30,9};

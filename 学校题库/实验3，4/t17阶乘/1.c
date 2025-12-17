@@ -1,5 +1,5 @@
 /*
-* �������� n �Ľ׳ˡ�
+* 计算整数 n 的阶乘。
 */
 long long factorial(int n)
 {

@@ -1,25 +1,25 @@
 /** 
- * ÆÀ²â»·¾³ÒÑ¾­ÊµÏÖÁË¹é²¢º¯Êý£¬ÄãÐèÒªµ÷ÓÃ¸Ãº¯ÊýÍê³É¹é²¢²Ù×÷¡£
- * Êý×éa¡¢³¤¶Èn¡£Êý×éb¡¢³¤¶Èm¡£¹é²¢µ½Ä¿±êÊý×éw¡£
+ * è¯„æµ‹çŽ¯å¢ƒå·²ç»å®žçŽ°äº†å½’å¹¶å‡½æ•°ï¼Œä½ éœ€è¦è°ƒç”¨è¯¥å‡½æ•°å®Œæˆå½’å¹¶æ“ä½œã€‚
+ * æ•°ç»„aã€é•¿åº¦nã€‚æ•°ç»„bã€é•¿åº¦mã€‚å½’å¹¶åˆ°ç›®æ ‡æ•°ç»„wã€‚
  */
 void merge(const int a[], const int n, const int b[], const int m, int w[]);
 
 /**
- * ¶ÔÕûÐÍÇø¼ä[b, e)½øÐÐ¹é²¢ÅÅÐò¡£Çø¼äÎª×ó±ÕÓÒ¿ª£¬²»º¬ÓÒ¶Ëµã¡£
- * Ö¸ÕëbÎªÇø¼ä¿ªÊ¼Î»ÖÃ£¬Ö¸ÕëeÎªÇø¼ä½áÊøÎ»ÖÃ¡£
- * w[]Îªµ÷ÓÃ·½Ìá¹©µÄ¹¤×÷Êý×é£¬ÈÝÁ¿±£Ö¤²»Ð¡ÓÚ(e - b)¡£
+ * å¯¹æ•´åž‹åŒºé—´[b, e)è¿›è¡Œå½’å¹¶æŽ’åºã€‚åŒºé—´ä¸ºå·¦é—­å³å¼€ï¼Œä¸å«å³ç«¯ç‚¹ã€‚
+ * æŒ‡é’ˆbä¸ºåŒºé—´å¼€å§‹ä½ç½®ï¼ŒæŒ‡é’ˆeä¸ºåŒºé—´ç»“æŸä½ç½®ã€‚
+ * w[]ä¸ºè°ƒç”¨æ–¹æä¾›çš„å·¥ä½œæ•°ç»„ï¼Œå®¹é‡ä¿è¯ä¸å°äºŽ(e - b)ã€‚
  */
 void merge_sort(int* b, int* e, int w[])
 {
-    if(e-b<=1)return; //Çø¼äÎª¿Õ»òÖ»ÓÐÒ»¸öÔªËØÊ±×ÔÈ»ÓÐÐò£¬Ö±½Ó·µ»Ø¼´¿É
+    if(e-b<=1)return; //åŒºé—´ä¸ºç©ºæˆ–åªæœ‰ä¸€ä¸ªå…ƒç´ æ—¶è‡ªç„¶æœ‰åºï¼Œç›´æŽ¥è¿”å›žå³å¯
     int len=e-b;
     int *mid=b+len/2;
-    // µÝ¹éÅÅÐò×óÓÒÁ½¸ö×ÓÇø¼ä
+    // é€’å½’æŽ’åºå·¦å³ä¸¤ä¸ªå­åŒºé—´
     merge_sort(b,mid,w);
     merge_sort(mid,e,w);
-    // ½«Á½¸öÒÑÅÅÐòµÄ×ÓÇø¼ä¹é²¢µ½ÁÙÊ±Êý×éw
+    // å°†ä¸¤ä¸ªå·²æŽ’åºçš„å­åŒºé—´å½’å¹¶åˆ°ä¸´æ—¶æ•°ç»„w
     merge(b,mid-b,mid,e-mid,w);
-    // ½«¹é²¢½á¹û¸´ÖÆ»ØÔ­Êý×é
+    // å°†å½’å¹¶ç»“æžœå¤åˆ¶å›žåŽŸæ•°ç»„
     int i;
     for(i=0;i<len;i++)
     {

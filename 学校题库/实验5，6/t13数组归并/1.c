@@ -1,5 +1,5 @@
 /*
- * Êı×éa¡¢³¤¶Èn¡£Êı×éb¡¢³¤¶Èm¡£Ä¿±êÊı×éc¡£
+ * æ•°ç»„aã€é•¿åº¦nã€‚æ•°ç»„bã€é•¿åº¦mã€‚ç›®æ ‡æ•°ç»„cã€‚
 */
 void merge_array(const int a[], const int n, const int b[], const int m, int c[])
 {

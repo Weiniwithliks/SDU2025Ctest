@@ -1,6 +1,6 @@
 /*
- * Êı×éarr¡¢ÈİÁ¿capacity¡¢ÓĞĞ§³¤¶Èlength£¬ÔÚposÎ»ÖÃ²åÈëÔªËØelem£¬ºóĞøÔªËØÒÀ´Îµİ½ø¡£
- * ·µ»ØÖµ²Î¿¼ÌâÃæÒªÇó¡£
+ * æ•°ç»„arrã€å®¹é‡capacityã€æœ‰æ•ˆé•¿åº¦lengthï¼Œåœ¨posä½ç½®æ’å…¥å…ƒç´ elemï¼Œåç»­å…ƒç´ ä¾æ¬¡é€’è¿›ã€‚
+ * è¿”å›å€¼å‚è€ƒé¢˜é¢è¦æ±‚ã€‚
  */
 int insert_element(int a[], int capacity, int length, int pos, int elem)
 {

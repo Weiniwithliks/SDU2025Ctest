@@ -1,6 +1,6 @@
 /*
- * ����arr����Ч����length��ɾ��posλ�õ�Ԫ�أ�����Ԫ������ǰ�ơ�
- * ����ֵ�ο�����Ҫ��
+ * 数组arr、有效长度length，删除pos位置的元素，后续元素依次前移。
+ * 返回值参考题面要求。
  */
 int remove_element(int a[], int length, int pos)
 {

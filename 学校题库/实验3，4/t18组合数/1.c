@@ -1,5 +1,5 @@
-// ´Ë´¦¿ÉÒÔ¶¨Òå¸¨Öúº¯Êı¡£
-unsigned long long factorial(int n)       //¼ÆËã½×³Ë
+// æ­¤å¤„å¯ä»¥å®šä¹‰è¾…åŠ©å‡½æ•°ã€‚
+unsigned long long factorial(int n)       //è®¡ç®—é˜¶ä¹˜
 {
     if(n==0)return 1;
     else
@@ -14,7 +14,7 @@ unsigned long long factorial(int n)       //¼ÆËã½×³Ë
     }
 }
 /*
-* ¼ÆËã×éºÏÊıC(n, k)£¬¼´´Ón¸ö²»Í¬ÔªËØÑ¡³ök¸öµÄ×éºÏ·½°¸ÊıÁ¿¡£
+* è®¡ç®—ç»„åˆæ•°C(n, k)ï¼Œå³ä»nä¸ªä¸åŒå…ƒç´ é€‰å‡ºkä¸ªçš„ç»„åˆæ–¹æ¡ˆæ•°é‡ã€‚
 */
 long long comb(int n, int k)
 {

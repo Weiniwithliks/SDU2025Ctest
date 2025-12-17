@@ -33,10 +33,10 @@ int hw(long long ip)
     if(hui==saveyixia)return 1;
     else return 0;
 }
-/* Ô­hwº¯Êı£¬´´½¨ÁËÒ»¸ö³¤¶È19µÄÊı×é£¬Ê¹ÓÃÁ½´ÎÑ­»·£¬Ê±¼ä¸´ÔÓ¶ÈO(2n) ÔÙ¾íÒ»ÏÂ³£Êı£¡
+/* åŸhwå‡½æ•°ï¼Œåˆ›å»ºäº†ä¸€ä¸ªé•¿åº¦19çš„æ•°ç»„ï¼Œä½¿ç”¨ä¸¤æ¬¡å¾ªç¯ï¼Œæ—¶é—´å¤æ‚åº¦O(2n) å†å·ä¸€ä¸‹å¸¸æ•°ï¼
 int hw(long long ip)
 {
-    int a[19];   //int64×î´ó19Î»Êı
+    int a[19];   //int64æœ€å¤§19ä½æ•°
     int i,step=0;
     long long oip=ip;
     for(i=0;i<19; i++)
@@ -55,7 +55,7 @@ int hw(long long ip)
     if(oip==op)return 1;
     else return 0;
 }
-//ÓëÔ­hwº¯ÊıÅäÌ×µÄ¼ÆËã10^aµÄº¯Êı£¬Ò²ÆúÓÃ    
+//ä¸åŸhwå‡½æ•°é…å¥—çš„è®¡ç®—10^açš„å‡½æ•°ï¼Œä¹Ÿå¼ƒç”¨    
 long long pown(int a)
 {
     long long result=1;

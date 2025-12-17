@@ -24,7 +24,7 @@ int main()
     }
     return 0;
 }
-int pd(unsigned long long ip) //ÅĞ¶ÏÊÇ²»ÊÇ2µÄÃİ
+int pd(unsigned long long ip) //åˆ¤æ–­æ˜¯ä¸æ˜¯2çš„å¹‚
 {
     if(ip==0)return 0;
     int op=0;

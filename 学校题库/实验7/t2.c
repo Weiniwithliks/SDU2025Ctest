@@ -110,5 +110,5 @@ vec3 *vec3_copy(const vec3 *v)
 
 void vec3_assign(vec3 *a, const vec3 *b)
 {
-    vec3_set(a,b->x,b->y,b->z);
+    vec3_set(a, b->x, b->y, b->z);
 }
